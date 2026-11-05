@@ -1,0 +1,307 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    color: #222;
+    background-image: url("maha.png");
+}
+
+
+/* HEADER */
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav {
+    margin-top: 15px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+/* BUTTON */
+
+button {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #b20710;
+}
+
+
+/* HOME */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+
+/* MOVIES */
+
+.page-title {
+    text-align: center;
+    margin: 30px;
+}
+
+
+.movie-container {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding: 30px;
+}
+
+
+.movie-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow:
+        0 4px 10px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+.movie-card img {
+    width: 60%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+.movie-card h3 {
+    margin: 15px;
+}
+
+
+/* DETAILS */
+
+.details,
+.selection-box,
+.summary-box,
+.payment-box,
+.form-box,
+.confirmation,
+.ticket {
+
+    max-width: 500px;
+
+    margin: 50px auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 10px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+.details p {
+    margin: 15px;
+}
+
+
+.selection-box button {
+    display: block;
+
+    width: 100%;
+
+    margin: 15px 0;
+}
+
+
+/* SEATS */
+
+.seat-page {
+    text-align: center;
+    padding: 30px;
+}
+
+
+.screen {
+    width: 80%;
+    margin: 20px auto;
+
+    background: #222;
+
+    color: white;
+
+    padding: 15px;
+}
+
+
+.seat-row {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    margin: 15px;
+}
+
+
+.seat {
+    width: 55px;
+    height: 45px;
+
+    padding: 5px;
+}
+
+
+.regular {
+    background: #888;
+}
+
+
+.premium {
+    background: #555;
+}
+
+
+.recliner {
+    background: #333;
+}
+
+
+.seat.selected {
+    background: #e50914;
+}
+
+
+.booking-summary {
+    background: white;
+
+    max-width: 400px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* FORM */
+
+.form-box input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+.form-box button {
+    width: 100%;
+
+    margin: 15px 0;
+}
+
+
+/* TICKET */
+
+.ticket {
+    border: 2px dashed #222;
+}
+
+
+.qr {
+    margin: 30px auto;
+
+    width: 150px;
+    height: 150px;
+
+    background: #222;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .movie-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+
+    .seat {
+        width: 45px;
+        height: 40px;
+    }
+
+
+    .seat-row {
+        gap: 5px;
+    }
+
+
+    nav a {
+        display: inline-block;
+    }
+
+}

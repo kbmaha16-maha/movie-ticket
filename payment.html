@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Payment</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>💳 Payment</h1>
+    <nav>
+         <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="login.html">Login</a>
+      <a href="summary.html">summary</a>
+    </nav>
+
+</header>
+
+
+<div class="payment-box">
+
+    <h2>Payment Details</h2>
+
+
+    <p>
+        Ticket Amount:
+        ₹<span id="paymentAmount"></span>
+    </p>
+
+
+    <p>
+        Convenience Fee:
+        ₹30
+    </p>
+
+
+    <hr>
+
+
+    <h3>
+        Total:
+        ₹<span id="paymentTotal"></span>
+    </h3>
+
+
+    <button onclick="makePayment()">
+        Pay Now
+    </button>
+
+</div>
+
+
+<script src="js/script.js"></script>
+<script src="js/script1.js"></script>
+
+</body>
+</html>

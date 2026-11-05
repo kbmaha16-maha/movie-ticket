@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Select Seats</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🎟️ Select Your Seats</h1>
+    <nav>
+         <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="login.html">Login</a>
+      <a href="payment.html">panav>yment</a>
+</nav>
+</header>
+
+
+<div class="seat-page">
+
+    <div class="screen">
+        SCREEN
+    </div>
+
+
+    <h3>Regular - ₹150</h3>
+
+    <div class="seat-row">
+
+        <button class="seat regular"
+            onclick="selectSeat(this, 'A1', 150)">
+            A1
+        </button>
+
+        <button class="seat regular"
+            onclick="selectSeat(this, 'A2', 150)">
+            A2
+        </button>
+
+        <button class="seat regular"
+            onclick="selectSeat(this, 'A3', 150)">
+            A3
+        </button>
+
+        <button class="seat regular"
+            onclick="selectSeat(this, 'A4', 150)">
+            A4
+        </button>
+
+    </div>
+
+
+    <h3>Premium - ₹200</h3>
+
+    <div class="seat-row">
+
+        <button class="seat premium"
+            onclick="selectSeat(this, 'B1', 200)">
+            B1
+        </button>
+
+        <button class="seat premium"
+            onclick="selectSeat(this, 'B2', 200)">
+            B2
+        </button>
+
+        <button class="seat premium"
+            onclick="selectSeat(this, 'B3', 200)">
+            B3
+        </button>
+
+        <button class="seat premium"
+            onclick="selectSeat(this, 'B4', 200)">
+            B4
+        </button>
+
+    </div>
+
+
+    <h3>Recliner - ₹300</h3>
+
+    <div class="seat-row">
+
+        <button class="seat recliner"
+            onclick="selectSeat(this, 'C1', 300)">
+            C1
+        </button>
+
+        <button class="seat recliner"
+            onclick="selectSeat(this, 'C2', 300)">
+            C2
+        </button>
+
+        <button class="seat recliner"
+            onclick="selectSeat(this, 'C3', 300)">
+            C3
+        </button>
+
+        <button class="seat recliner"
+            onclick="selectSeat(this, 'C4', 300)">
+            C4
+        </button>
+
+    </div>
+
+
+    <div class="booking-summary">
+
+        <h3>Selected Seats</h3>
+
+        <p id="selectedSeats">
+            None
+        </p>
+
+        <h3>
+            Total: ₹<span id="totalPrice">0</span>
+        </h3>
+
+        <button onclick="continueToSummary()">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="js/script.js"></script>
+<script src="js/script1.js"></script>
+
+</body>
+</html>
